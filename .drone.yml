@@ -1,0 +1,6 @@
+pipeline:
+  build:
+    image: ruby:2.3.3
+    commands:
+      - bundle install -j 4
+      - bundle exec ruby spec/test_spec.rb
